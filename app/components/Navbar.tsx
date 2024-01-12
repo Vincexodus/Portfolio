@@ -19,9 +19,9 @@ const Navbar = () => {
             src="images/PixelProfile_white.png"
             alt="icon"
           />
-          <h1 className="no-underline px-2 py-1 relative text-white">
+          <p className="no-underline px-2 py-1 relative text-white">
               Vincent Chin
-          </h1>
+          </p>
         </Link>
         <div className="flex-1 overflow-hidden text-right">
           <ul className="space-x-10">

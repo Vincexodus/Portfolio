@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <div className="bg-cover text-center">
         <div className="w-1/2 m-auto">
-          <h1 className="text-2xl font-bold">Vincent Chin (CS student / Developer)</h1>
+          <h1 className="font-bold">Vincent Chin (CS student / Developer)</h1>
           <h3 className="text-justify py-5">
             I'm currently in my final year of Computer Science (General) Degree.
             I've been exploring Web Development, Competitive Programming, Game
