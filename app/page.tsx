@@ -20,6 +20,7 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import ProjectsPage from "./Projects/page";
 
 export default function Home() {
   library.add(faGithub, faInstagram, faLinkedin, faLinkedinIn, faTwitter);
@@ -76,6 +77,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      {/* <ProjectsPage /> */}
     </main>
   );
 }
