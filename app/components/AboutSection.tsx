@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="py-10" id="about">
-      <div className="w-4/5 m-auto">
+    <section className="py-10 my-10" id="about">
+      <div className="w-4/5 my-10 m-auto">
         <div className="flex">
           <img
             src="/images/masked_portrait.png"

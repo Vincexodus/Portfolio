@@ -1,26 +1,18 @@
 "use client";
-import React  from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config, library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faDownload,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import AvatarCanvas from "./AvatarCanvas";
+import { socialMediaLinks } from "./constants";
 
 const IntroSection = () => {
-  library.add(faGithub, faInstagram, faLinkedin, faLinkedinIn, faTwitter);
+  library.add(faGithub, faInstagram, faLinkedinIn, faTwitter);
 
   return (
-    <section className="py-10">
+    <section className="py-10 mb-20" id="intro">
       <div className="h-96">
         <AvatarCanvas />
       </div>
@@ -34,7 +26,7 @@ const IntroSection = () => {
             FPS games, watching tech-related videos, and binge-watching anime.
           </h3>
 
-          <div className="border-4 border-white p-2 inline-block">
+          <div className="border-4 border-white p-3 m-3 inline-block">
             <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
               Resume{" "}
               <FontAwesomeIcon
@@ -45,49 +37,21 @@ const IntroSection = () => {
           </div>
         </div>
         <div className="py-5 space-x-8">
-          <a
-            href="https://github.com/Vincexodus"
-            target="_blank"
-            className="p-4 border-b-4 border-transparent transition-all duration-500 hover:border-white"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              style={{ color: "white", fontSize: 25 }}
-            />
-          </a>
-          <a
-            href="www.linkedin.com/in/vincentchin23"
-            target="_blank"
-            className="p-4 border-b-4 border-transparent transition-all duration-500 hover:border-white"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin-in"]}
-              style={{ color: "white", fontSize: 25 }}
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/vinccent23/"
-            target="_blank"
-            className="p-4 border-b-4 border-transparent transition-all duration-500 hover:border-white"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              style={{ color: "white", fontSize: 25 }}
-            />
-          </a>
-          <a
-            href="https://twitter.com/Vincexodus"
-            target="_blank"
-            className="p-4 border-b-4 border-transparent transition-all duration-500 hover:border-white"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "twitter"]}
-              style={{ color: "white", fontSize: 25 }}
-            />
-          </a>
+          {socialMediaLinks.map((socialMedia, index) => (
+            <a
+              key={index}
+              href={socialMedia.link}
+              target="_blank"
+              className="p-4 border-b-4 border-transparent transition-all duration-500 hover:border-white"
+            >
+              <FontAwesomeIcon
+                icon={socialMedia.icon}
+                style={{ color: "white", fontSize: 25 }}
+              />
+            </a>
+          ))}
         </div>
       </div>
-      {/* <ProjectsPage /> */}
     </section>
   );
 };
