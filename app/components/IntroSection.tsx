@@ -20,8 +20,8 @@ const IntroSection = () => {
         <div className="w-1/2 m-auto">
           <h1 className="font-bold">Vincent Chin (CS student / Developer)</h1>
           <h3 className="text-justify py-5">
-            I'm currently in my final year of Computer Science (General) Degree.
-            I've been exploring Web Development, Competitive Programming, Game
+            I&apos;m currently in my final year of Computer Science (General) Degree.
+            I&apos;ve been exploring Web Development, Competitive Programming, Game
             Development, Deep learning, etc. I enjoy listening to music, playing
             FPS games, watching tech-related videos, and binge-watching anime.
           </h3>

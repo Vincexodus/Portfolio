@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState, FormEvent } from 'react';
 import { faEnvelope, faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const contactPage = () => {
+const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -59,7 +58,7 @@ const contactPage = () => {
     <section className="py-10 my-10" id="contact">
       <div className="w-1/2 text-center my-10 m-auto">
         <h1 className="font-bold">Leave A Message!</h1>
-        <h3>Feel free to reach out below. I'll be glad to help!</h3>
+        <h3>Feel free to reach out below. I&apos;ll be glad to help!</h3>
         <form onSubmit={handleFormSubmit} className="grid py-5">
           <input
             type="text"
@@ -125,4 +124,4 @@ const contactPage = () => {
   );
 };
 
-export default contactPage;
+export default ContactSection;
