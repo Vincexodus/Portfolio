@@ -1,10 +1,8 @@
 import React from "react";
 
-const AboutPage = () => {
-  const currentAge: number = new Date().getFullYear() - 2002;
-
+const AboutSection = () => {
   return (
-    <div className="bg-cover">
+    <section className="py-10" id="about">
       <div className="w-4/5 m-auto">
         <div className="flex">
           <img
@@ -22,8 +20,8 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default AboutPage;
+export default AboutSection;

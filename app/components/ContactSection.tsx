@@ -12,7 +12,8 @@ const contactPage = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const hoverAnimation = "transition-colors duration-500 hover:bg-white hover:text-[#202023]";
+  const hoverAnimation =
+    "transition-colors duration-500 hover:bg-white hover:text-[#202023]";
   const firstInputStyle = `bg-transparent border-4 border-white outline-none p-3 text-white ${hoverAnimation}`;
   const nextInputStyle = `bg-transparent border-l-4 border-r-4 border-b-4 border-white outline-none p-3 text-white ${hoverAnimation}`;
   const submitStyle = `${nextInputStyle} text-white cursor-pointer ${hoverAnimation}`;
@@ -56,7 +57,7 @@ const contactPage = () => {
   };
 
   return (
-    <div className="bg-cover">
+    <section className="py-10" id="contact">
       <div className="w-1/2 m-auto text-center">
         <h1 className="font-bold">Leave A Message!</h1>
         <h3>Feel free to reach out below. I'll be glad to help!</h3>
@@ -121,7 +122,7 @@ const contactPage = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

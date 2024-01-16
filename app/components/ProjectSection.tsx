@@ -1,14 +1,18 @@
 import React from "react";
 
-const ProjectsPage = () => {
-  const wrapperStyle = "border-4 border-white group hover:bg-white transition-colors duration-500";
-  const imgStyle = "transition-transform duration-500 ease-in-out group-hover:scale-125";
-  const titleStyle = "py-1 font-bold text-center transition-colors duration-500 group-hover:text-[#202023]";
-  const descStyle = "p-2 text-justify transition-colors duration-500 group-hover:text-[#202023]";
+const ProjectSection = () => {
+  const wrapperStyle =
+    "border-4 border-white group hover:bg-white transition-colors duration-500";
+  const imgStyle =
+    "transition-transform duration-500 ease-in-out group-hover:scale-125";
+  const titleStyle =
+    "py-1 font-bold text-center transition-colors duration-500 group-hover:text-[#202023]";
+  const descStyle =
+    "p-2 text-justify transition-colors duration-500 group-hover:text-[#202023]";
   const dividerStyle = "border-2 border-white";
 
   return (
-    <div className="bg-cover">
+    <section className="py-10" id="project">
       <h1 className="text-center py-5">Web Development</h1>
       <div className="w-4/5 grid grid-cols-4 m-auto gap-10 py-5">
         <div className={wrapperStyle}>
@@ -137,8 +141,8 @@ const ProjectsPage = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ProjectsPage;
+export default ProjectSection;
