@@ -1,0 +1,33 @@
+import { ContentLayout } from "../../components/layout/projects-layout.tsx";
+import metromantap from "/public/assets/projects/metro_mantap.png";
+export const meta = {
+  title: "MetroMantap",
+  publishedAt: "October 2024",
+  banner: metromantap,
+  description: "Real-Time Crowd Management System for Railway Stations",
+  github: "https://github.com/Vincexodus/MetroMantap",
+};
+
+export default ({ children }) => (
+  <ContentLayout meta={meta}>{children}</ContentLayout>
+);
+
+## **Overview**
+
+MetroMantap is a real-Time Crowd Management System for train stations using sensor technology,
+ AI-driven analytics, and real-time data processing to improve passenger flow, reduce congestion, and optimize train operations and scheduling
+
+## Tech Stack
+
+- OpenCV for video feed handling and preprocessing
+- Python sockets for real-time socket communication over 5G network
+- Telegraf for data collection and system monitoring 
+- InfluxDB as time-series data storage for sensor readings and video results 
+- InfluxDB Dashboard for real-time data visualization
+
+## Features
+
+- Real-Time Train Crowd Monitoring
+- Data-backed Predictive Analytics
+- 5G-Enabled Low Latency
+- Web-Based Dashboard for Stakeholders
