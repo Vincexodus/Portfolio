@@ -1,7 +1,24 @@
 "use client";
 
 import { useEffect } from "react";
-import { animatePageIn } from "@/lib/animation";
+import gsap from "gsap";
+
+ const animatePageIn = (): void => {
+  const bannerOne: HTMLElement | null = document.getElementById("banner-1");
+  const bannerTwo: HTMLElement | null = document.getElementById("banner-2");
+  const bannerThree: HTMLElement | null = document.getElementById("banner-3");
+  const bannerFour: HTMLElement | null = document.getElementById("banner-4");
+
+  if (bannerOne && bannerTwo && bannerThree && bannerFour) {
+    const tl: gsap.core.Timeline = gsap.timeline();
+    tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
+      yPercent: 0,
+    }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
+      yPercent: 100,
+      stagger: 0.2,
+    });
+  }
+};
 
 export default function Template({ children }: { children: React.ReactNode }) {
   useEffect(() => {

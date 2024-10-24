@@ -2,8 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## To-Do
 
-- [ ] SEO Optimization
-- [ ] Advanced ESLint & Prettier Configuration
+- [ ] Advanced ESLint & Prettier Configuration (github workflow)
 - [ ] Dependency Bot
 
 ## Getting Started

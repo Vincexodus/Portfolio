@@ -7,7 +7,6 @@ import ev3guides from "../../public/assets/projects/repair_guide.png";
 import pcbuild3r from "../../public/assets/projects/pcbuild3r_icon.png";
 import conveyorBuds from "../../public/assets/projects/conveyor_buds.png";
 import metromantap from "../../public/assets/projects/metro_mantap.png";
-import onlyNews from "../../public/assets/projects/only_news.png";
 import shareEstate from "../../public/assets/projects/share_estate.jpeg";
 import { StaticImageData } from "next/image";
 
@@ -23,36 +22,27 @@ export const projectCard: CardData[] = [
   {
     title: "MetroMantap",
     logo: metromantap,
-    description:
-      "Real-Time Crowd Management System for Railway Stations",
+    description: "Real-Time Crowd Management System for Railway Stations",
     link: "/projects/metroMantap.mdx",
-  },
-  {
-    title: "OnlyNews",
-    logo: onlyNews,
-    description:
-      "System that connects donors who have excess items with recipients",
-    link: "/projects/onlyNews.mdx",
   },
   {
     title: "Conveyor Buds",
     logo: conveyorBuds,
     description:
-    "Luggage-matching game where players manage baggage and earn upgrades.",
+      "Luggage-matching game where players manage baggage and earn upgrades.",
     link: "https://miisan.itch.io/conveyor-buds",
   },
   {
     title: "ShareEstate",
     logo: shareEstate,
     description:
-    "Platform for fractional property ownership through blockchain and smart contracts",
+      "Platform for fractional property ownership through blockchain and smart contracts",
     link: "https://devfolio.co/projects/share-estate-932c",
   },
   {
     title: "LendLah",
     logo: sixShots,
-    description:
-    "Microfinance Accessibility for Small Businesses",
+    description: "Microfinance Accessibility for Small Businesses",
     link: "/projects/lendLah.mdx",
   },
   {
@@ -79,8 +69,7 @@ export const projectCard: CardData[] = [
   {
     title: "EV3 Tools & Guides",
     logo: ev3guides,
-    description:
-      "Blogpost related to EV3 Tools & Guides using GitHub pages",
+    description: "Blogpost related to EV3 Tools & Guides using GitHub pages",
     link: "https://vincexodus.github.io/EV3-Tools-and-Guides/",
   },
   {
@@ -93,8 +82,7 @@ export const projectCard: CardData[] = [
   {
     title: "Jello Squash",
     logo: jellosquash,
-    description:
-      "Mass-gaining 3D game with escalating challenges",
+    description: "Mass-gaining 3D game with escalating challenges",
     link: "https://nixon-voxell.itch.io/jellosquash",
   },
   {

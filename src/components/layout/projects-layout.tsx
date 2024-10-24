@@ -10,10 +10,7 @@ import { MDXComponent } from "../mdx-components";
 
 type ContentLayoutProps = {
   children: ReactElement<ContentSlugProps>;
-  meta: Pick<
-    Content,
-    "title" | "publishedAt" | "description" | "banner"
-  > &
+  meta: Pick<Content, "title" | "publishedAt" | "description" | "banner"> &
     Pick<Project, "bannerLink" | "date" | "github">;
 };
 
@@ -21,13 +18,7 @@ export function ContentLayout({
   meta,
   children,
 }: ContentLayoutProps): JSX.Element {
-  const {
-    title,
-    description,
-    publishedAt,
-    banner,
-    github,
-  } = meta;
+  const { title, description, publishedAt, banner, github } = meta;
 
   return (
     <>

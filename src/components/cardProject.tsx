@@ -17,14 +17,14 @@ const CardProject: React.FC<CardProps> = ({
   profit,
   link,
 }) => {
-  const isExternalLink = link.startsWith('http');
+  const isExternalLink = link.startsWith("http");
 
   return (
-    <Card className="rounded-2xl border border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] dark:shadow-zinc-700 hover:bg-slate-400 hover:rounded-2xl">
-      <Link href={link} target={isExternalLink ? '_blank' : '_self'}>
+    <Card className="rounded-2xl border border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:bg-slate-200 dark:shadow-neutral-700 dark:hover:bg-black ">
+      <Link href={link} target={isExternalLink ? "_blank" : "_self"}>
         <CardHeader className="w-full flex flex-1 items-start justify-center">
           <div className="text-sm flex justify-between items-center w-full">
-            <div className="flex gap-1 items-center justify-start">
+            <div className="flex gap-2 items-center justify-start">
               <Image
                 src={logo}
                 alt={`${title} logo`}

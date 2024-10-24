@@ -59,7 +59,7 @@ const BottomNavigation = () => {
             <button
               className="flex flex-col text-center  items-center cursor-pointer px-2"
               onClick={() => {
-                window.open("mailto:yastrasw@gmail.com");
+                window.open("mailto:vincent4552@gmail.com");
               }}
             >
               <Mail className="text-black dark:text-white" size={20} />
