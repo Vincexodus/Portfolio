@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 
- const animatePageIn = (): void => {
+const animatePageIn = (): void => {
   const bannerOne: HTMLElement | null = document.getElementById("banner-1");
   const bannerTwo: HTMLElement | null = document.getElementById("banner-2");
   const bannerThree: HTMLElement | null = document.getElementById("banner-3");

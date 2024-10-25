@@ -31,7 +31,7 @@ type ProjectPageProps = {
 export default function ProjectPage({ params }: ProjectPageProps) {
   const slug = params.slug.replace(".mdx", "");
   const ProjectMarkdown = dynamic(
-    () => import("../../../content/projects/" + slug + ".mdx")
+    () => import("../../../content/projects/" + slug + ".mdx"),
   );
 
   return (

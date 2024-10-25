@@ -8,6 +8,7 @@ import pcbuild3r from "../../public/assets/projects/pcbuild3r_icon.png";
 import conveyorBuds from "../../public/assets/projects/conveyor_buds.png";
 import metromantap from "../../public/assets/projects/metro_mantap.png";
 import shareEstate from "../../public/assets/projects/share_estate.jpeg";
+import lendlah from "../../public/assets/projects/lendlah.jpg";
 import { StaticImageData } from "next/image";
 
 interface CardData {
@@ -41,9 +42,9 @@ export const projectCard: CardData[] = [
   },
   {
     title: "LendLah",
-    logo: sixShots,
+    logo: lendlah,
     description: "Microfinance Accessibility for Small Businesses",
-    link: "/projects/lendLah.mdx",
+    link: "https://github.com/Vincexodus/LendLah",
   },
   {
     title: "PCBUILD3R",
